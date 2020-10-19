@@ -1,6 +1,6 @@
 INSERT INTO 
-    burgers_db.burgers (burger_name) 
+    burgers_db.burgers (burger_name, devoured) 
 VALUES 
-    ("Mc Burger"),
-    ("Baconator"),
-    ("Son of Baconator");
+    ("Mc Burger", true),
+    ("Baconator", false),
+    ("Son of Baconator", true);
