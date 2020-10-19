@@ -10,7 +10,7 @@ router.get("/", (req, res) => {
         const viewData = {
             burgers: data
         };
-        console.log(data);
+        res.render("index", viewData);
     });
 });
 
