@@ -21,14 +21,14 @@ router.post("/api/burgers", (req, res) => {
     });
 });
 
-router.put("/api/burgers:id", (req, res) => {
+router.put("/api/burgers/:id", (req, res) => {
 
-    burger.updateOne({devoured: request.body.devoured}, {id: request.params.id}, (res) => {
+    burger.updateOne({devoured: true}, {id: req.params.id}, (result) => {
         if (result.changedRows == 0) {
             // If no rows were changed, then the ID must not exist, so 404
             return response.status(404).end();
         }
-        response.status(200).end();
+        res.status(200).end();
     });
 });
 

@@ -19,7 +19,7 @@
             {{#each burgers}}
             {{#unless devoured}}
             <li>
-                <button class="btn btn-success btn-devour">Devour!</button>
+                <button data-burger-id="{{id}}" class="btn btn-success btn-devour">Devour!</button>
             </li>
             {{/unless}}
             {{/each}}

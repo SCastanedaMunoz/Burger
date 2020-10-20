@@ -12,7 +12,19 @@ $(function() {
             type: "POST",
             data: burger
         }).then(function() {
-            console.log("Created New Burger");
+            location.reload();
+        });
+    });
+
+    $(".btn-devour").on("click", function(event) {
+        event.preventDefault();
+
+        let id = $(this).data("burger-id");
+
+        $.ajax(`/api/burgers/${id}`, {
+            type: "PUT",
+            data: id,
+        }).then(function() {
             location.reload();
         });
     });

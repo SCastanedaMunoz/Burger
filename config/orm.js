@@ -46,8 +46,15 @@ const orm = {
         });
     },
     updateOne: (table, objColVals, condition, cb) => {
-        const queryString = `UPDATE ?? SET ?? WHERE ??`;
-        connection.query(queryString, [table, objToSql(objColVals), condition], (err, res) => {
+
+        let queryString = `UPDATE ${table}`;
+        
+        queryString += " SET ";
+        queryString += objToSql(objColVals);
+        queryString += " WHERE ";
+        queryString += objToSql(condition);
+
+        connection.query(queryString, (err, res) => {
             throwOrTrigger(err, res, cb);
         });
     }
