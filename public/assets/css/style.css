@@ -3,6 +3,12 @@ li {
   margin: 5px;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 .label {
   font-weight: bold;
 }
@@ -48,6 +54,43 @@ textarea {
 
 .btn-submit {
     margin: .5em 0;
+}
+
+.btn-devour {
+    padding: .7em 3em;
+    margin: 0;
+    margin-right: 2em;
+    font-size: 17.5px;
+}
+
+.ul-btn-devour {
+    padding-left: 0;
+    margin: 0;
+}
+
+.non-devour {
+    background-color: #EEEEEE;
+    padding: .7em 5em;
+    margin: 0;
+    text-align: center;
+    font-family: monospace;
+    font-size: 17.5px;
+    font-weight: bolder;
+    border: 2px solid #999999;
+    border-radius: 3.5px;
+}
+
+.devour {
+    color: #999999;
+    background-color: #EEEEEE;
+    padding: .7em 5em;
+    margin: 0;
+    text-align: center;
+    font-family: monospace;
+    font-size: 17.5px;
+    font-weight: bolder;
+    border: 2px solid #999999;
+    border-radius: 3.5px;
 }
 
 @media (min-width: 576px) {

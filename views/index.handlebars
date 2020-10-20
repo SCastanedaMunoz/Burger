@@ -4,8 +4,41 @@
         <h1 class="h1-burger">Eat-Da-Burger!</h1>
     </header>
 
+    <div class="row justify-content-center">
+        <ul>
+            {{#each burgers}}
+            {{#unless devoured}}
+            <li>
+                <p class="non-devour">{{id}}. {{burger_name}}</p>
+            </li>
+            {{/unless}}
+            {{/each}}
+        </ul>
+
+        <ul class="ul-btn-devour">
+            {{#each burgers}}
+            {{#unless devoured}}
+            <li>
+                <button class="btn btn-success btn-devour">Devour!</button>
+            </li>
+            {{/unless}}
+            {{/each}}
+        </ul>
+
+        <ul>
+            {{#each burgers}}
+            {{#if devoured}}
+            <li>
+                <p class="devour">{{id}}. {{burger_name}}</p>
+            </li>
+            {{/if}}
+            {{/each}}
+        </ul>
+    </div>
+
+
     <div class="text-burger">
-        <textarea name="" id="" cols="150" rows="3"></textarea>
+        <textarea name="burger" id="burger_name" cols="150" rows="3"></textarea>
 
         <div class="row">
             <button type="submit" class="btn btn-primary mx-auto btn-submit">Submit</button>
