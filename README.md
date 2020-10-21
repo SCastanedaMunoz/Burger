@@ -11,11 +11,10 @@
 * [Usage](##Usage)
 * [License](##License)
 * [Contributing](##Contributing)
-* [Tests](##Tests)
 * [Questions](##Questions)
 
 ## **Installation**
-There is no installation process for ***Eat-Da-Burger***, the app can be found on it's deployed Website at [Eat-Da-Burger.](https://scastanedamunoz-eat-da-burger.herokuapp.com). However, all the app code is available in the [Git Hub Repository](https://github.com/SCastanedaMunoz/Note-Taker). If you decide to clone the Repository, you will have to open the project on your terminal and run the npm i or npm install process. This will fetch and install any required npm packages in order to run the application. ***Eat-Da-Burger*** was built using Node 12.8.2 and npm 6.14.5. 
+There is no installation process for ***Eat-Da-Burger***, the app can be found on it's deployed Website at [Eat-Da-Burger.](https://scastanedamunoz-eat-da-burger.herokuapp.com). However, all the app code is available in the [Git Hub Repository](https://github.com/SCastanedaMunoz/Burger). If you decide to clone the Repository, you will have to open the project on your terminal and run the npm i or npm install process. This will fetch and install any required npm packages in order to run the application. ***Eat-Da-Burger*** was built using Node 12.8.2 and npm 6.14.5. 
 
 ## **Usage**
 As mentioned before, The main purpose of this application is for users to keep track of burgers they would like to devour, and burgers that they have successfully devour. Here are some screenshots of the different areas of the app and how they can be used:
@@ -69,7 +68,7 @@ If you wish to contribute to the project, make sure to read the following guidel
 * Create a pull request, after proper review it will be merged into the Git Repository
 
 ## **Questions**
-If you have any questions regarding this app, feel free to contact me through my email, the [README Generator Repo](https://github.com/SCastanedaMunoz/README-Generator). All questions will be answered in a reasonable amount of time.
+If you have any questions regarding this app, feel free to contact me through my email, or the [Eat-Da-Burger Repository](https://github.com/SCastanedaMunoz/Burger). All questions will be answered in a reasonable amount of time.
 
 ### ***GitHub Profile***
 https://github.com/SCastanedaMunoz
